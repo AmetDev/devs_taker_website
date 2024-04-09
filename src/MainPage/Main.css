@@ -31,7 +31,7 @@ body {
 }
 @media screen and (max-width: 500px) {
 	.title {
-		font-size: 52px;
+		font-size: 48px;
 	}
 }
 
@@ -56,9 +56,17 @@ body {
 	/* position: relative; */
 	/* z-index: 2; */
 	cursor: pointer;
-
-	margin-top: 40px;
-	margin-left: 40px;
+	margin-top: 20px;
+	&:first-of-type {
+		margin-right: 20px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.btn {
+		&:first-of-type {
+			margin-right: 0px;
+		}
+	}
 }
 
 .btn:active {
